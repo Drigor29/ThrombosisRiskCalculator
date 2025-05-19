@@ -1,0 +1,25 @@
+<!-- app/src/main/res/layout/activity_main.xml -->  
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout  
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:orientation="vertical"  
+    android:padding="16dp">  
+
+    <CheckBox android:id="@+id/checkAge40" android:text="Возраст 40-59 лет (1 балл)"/>  
+    <CheckBox android:id="@+id/checkAge60" android:text="Возраст ≥60 лет (2 балла)"/>  
+    <CheckBox android:id="@+id/checkSurgery" android:text="Операция >60 мин (2 балла)"/>  
+    <CheckBox android:id="@+id/checkVaricose" android:text="Варикоз (1 балл)"/>  
+    <CheckBox android:id="@+id/checkHistoryVTE" android:text="ТЭО в анамнезе (3 балла)"/>  
+
+    <Button  
+        android:id="@+id/btnCalculate"  
+        android:text="Рассчитать риск"  
+        android:layout_marginTop="20dp"/>  
+
+    <TextView  
+        android:id="@+id/txtResult"  
+        android:layout_marginTop="20dp"  
+        android:textSize="18sp"/>  
+</LinearLayout>  
